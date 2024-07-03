@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities{
+    .btn-black{
+        @apply dark:bg-[#5F78A9] bg-[#333333] px-[6px] pb-[3px] rounded-sm text-white uppercase ;
+    }
+        .card{
+            @apply  flex flex-col gap-10 items-center md:flex-row border-2 p-2 hover:scale-105 transition-all cursor-pointer ;
+    }
+.card-title{
+    @apply  dark:text-white md:text-2xl text-[#333333] pt-3 pb-4 font-semibold text-xl;
+}
+    .tag-btn{
+        @apply dark:bg-[#909db8] dark:text-[#000] bg-[#5677AC26] px-[6px] py-[3px] rounded-sm transition-all hover:bg-black hover:text-white cursor-pointer active:bg-slate-500 ; 
+    }
+    .news_btn{
+        @apply   cursor-pointer text-[#333333] font-semibold text-2xl bg-[#E6EBF3] w-full rounded-full py-2 text-center hover:bg-[#869abb] transition-all;
+    }
+    .news_pt_pb{
+        @apply text-lg md:text-2xl  pb-4  md:pb-6 text-center font-semibold rounded-full mx-auto w-64 hover:bg-[#869abb5f]
+    }
+    }
